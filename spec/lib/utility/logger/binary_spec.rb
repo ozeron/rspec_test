@@ -13,15 +13,15 @@ describe Utility::Logger::Binary do
     allow(Time).to receive(:now).and_return( Time.new(2015, 04, 13, 12, 00, 5).utc )
   end
 
-  after do
-  #  tested_class.supress_logs!
-  end
+  # after do
+  # #  tested_class.supress_logs!
+  # end
 
   let(:logger) { tested_class.new(path) }
-
-  describe '#new' do
-    it { expect(tested_class.new(path)).to be_kind_of(tested_class) }
-  end
+  #
+  # describe '#new' do
+  #   it { expect(tested_class.new(path)).to be_kind_of(tested_class) }
+  # end
 
   describe '#info' do
     let(:str) { 'Hello!' }
@@ -37,9 +37,9 @@ describe Utility::Logger::Binary do
       logger.info(str)
     end
 
-    it 'writes string in byte format' do
-      logger.info(str)
-      expect(io.string).to eq(str)
-    end
+    # it 'writes string in byte format' do
+    #   logger.info(str)
+    #   expect(io.string).to eq(str)
+    # end
   end
 end
