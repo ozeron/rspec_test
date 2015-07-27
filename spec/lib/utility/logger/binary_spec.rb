@@ -32,6 +32,7 @@ describe Utility::Logger::Binary do
     end
 
     it 'open file in path' do
+      byebug
       expect(File).to receive(:open).with(path_to_log, 'ab')
       logger.info(str)
     end

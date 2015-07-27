@@ -10,7 +10,7 @@ DATA_PATH = File.join(APP_ROOT, 'spec', 'data')
 require 'gps_receiver'
 
 Dir[File.join(APP_ROOT, 'spec/support/**/**.rb')].each { |p| require(p) }
-Utility::Logger.supress_logs!
+#Utility::Logger.supress_logs!
 
 RSpec.configure do |config|
 

@@ -1,5 +1,3 @@
-require_relative 'generic'
-
 module Utility
   module Logger
     # Class for making dump of incomming packets
